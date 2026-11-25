@@ -1,0 +1,37 @@
+Hello World - User Guide
+Author: Karl Khouri
+Version: 1.0
+
+Description
+-----------
+Hello World is a simple console application that prints:
+
+    Hello, World from Karl_Khouri!
+
+Windows (MSI)
+-------------
+Install:  double-click helloworld_karl_khouri.msi
+          or run: msiexec /i helloworld_karl_khouri.msi /qb
+Location: C:\Program Files\HelloWorld\
+Run:      open Command Prompt and type
+          "C:\Program Files\HelloWorld\helloworld.exe"
+Remove:   Control Panel > Programs and Features > HelloWorld Karl Khouri > Uninstall
+          or run: msiexec /x helloworld_karl_khouri.msi /qb
+
+Debian / Ubuntu (DEB)
+---------------------
+Install:  sudo dpkg -i helloworld_karl_khouri.deb
+Location: /usr/local/bin/helloworld
+Docs:     /usr/share/doc/myapp/
+Run:      helloworld
+Check:    dpkg -l | grep helloworld
+Remove:   sudo dpkg -r helloworld
+
+RedHat / Fedora (RPM)
+---------------------
+Install:  sudo rpm -i myapp-1.0-1*.x86_64.rpm
+Location: /usr/local/bin/helloworld
+Docs:     /usr/share/doc/myapp/
+Run:      helloworld
+Check:    rpm -qi myapp
+Remove:   sudo rpm -e myapp
